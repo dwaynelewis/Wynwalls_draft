@@ -1,20 +1,19 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog',
-controller: 'articles' %>
+<h1>Put picture here</h1>
+<%#= link_to 'Wynwalls',controller: 'articles' %>
 
-<%= link_to 'New article',
+<%= link_to 'New review',
 new_article_path %>
 
-<h1>Listing Articles</h1>
+<h1>List of Reviews</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>Name</th>
+    <th>Review</th>
     <th colspan="2"></th>
   </tr>
 
-  <%= link_to 'New article',
+  <%= link_to 'Reviews',
   new_article_path %>
 
   <% @articles.each do |article| %>
@@ -24,8 +23,8 @@ new_article_path %>
       </td>
       <td><%= article.text %>
       </td>
-      <td><%= link_to 'Edit',
-      edit_article_path(article) %></td>
+      <!-- <td><%#= link_to 'Edit',
+      edit_article_path(article) %></td> -->
     </tr>
 
 </td>

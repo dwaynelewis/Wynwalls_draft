@@ -1,24 +1,19 @@
-<h1> New Article </h1>
+<h1> New Review </h1>
 
-<%= form_for :article, url:
-articles_path do |f| %>
-
-<%= form_with_scope: :article,
-url: articles_path, local: true
-do |form| %>
+<%= form_for :article, url:articles_path do |f| %>
 
 <p>
-  <%= f.label :title %><br>
+  <%= f.label :title, "Name" %><br>
   <%= f.text_field :title %>
 </p>
 
 <p>
-  <%= f.label :text %><br>
+  <%= f.label :text, "Review" %><br>
   <%= f.text_area :text %>
 </p>
 
 <p>
-  <%= f.submit %>
+  <%= f.submit "New Review" %>
 
 </p>
 <% end %>
